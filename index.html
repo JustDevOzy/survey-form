@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Survey Form" />
+    <title>Survey Form</title>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id= "title">freeCodeCamp Survey Form</h1>
+      <p id= "description">Thank you for taking the time to help us improve the platform</p> 
+    </header>
+    
+    
+    <div class="form"></div>
+    <form id= "survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" class="best"required/>
+
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" class="best"  required/>
+
+    <label id="number-label" for="number">Age <span class="opt" >(optional)</span></label>
+    <input id="number" type="number"  class="best"placeholder="Age" required min="12" max="98"/>
+    </div>
+    
+    <div class="form">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" class="big_form" required>
+        <option disabled selected value>Selected Current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full time</option>
+        <option value="learner"> Learner </option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other"> Other</option>
+</select>
+</div>
+
+  <div class="form">
+    <p>Would you recommend freecodeCamp to a friend?</p>
+    <label>
+      <input name="recommend" value="definitely" type="radio" class="my-radio"> Defintely
+    </label>
+
+    <label>
+      <input name="recommend" value="maybe" type="radio" class="my-radio"> Maybe
+    </label>
+
+    <label>
+      <input name="recommend" value="not-sure" type="radio" class="my-radio"> Not sure
+    </label>
+  </div>
+
+  <div class="form">
+    <p>What is your favorite feature of freecodeCamp</p>
+    <select id="fav" name="liked" class="best" required>
+      <option disables selected value>Select Option </option>
+      <option value="challenges">Challenges</option>
+      <option value="projects">Projects</option>
+      <option value="community">Community</option>
+      <option value="openSource">Open Source</option>
+
+    </select>
+  </div>
+
+    <div class="form">
+      <p> What would you ike to see Improved? <span>(check all that apply) </span> </p>
+    </div>
+   
+    <label>
+      <input name="choose" value="front-end-projects" type="checkbox" class="check">Front-end Projects
+    </label>
+
+    <label>
+      <input name="choose" value="back-end-projects" type="checkbox" class="check">Back-end Projects
+    </label>
+
+      <label>
+        <input name="choose" value="data-visualization" type="checkbox" class="check"> Data-Visualization
+      </label>
+
+      <label>
+        <input name="choose" value="challenges" type="checkbox" class="check"> Challenges
+      </label>
+
+      <label>
+        <input name="choose" value="open-source-community" type="checkbox" class="check"> Open Sorce Community
+      </label>
+
+      <label>
+        <input name="choose" value="gitter-help-rooms" type="checkbox" class="check"> Gitter Help Rooms
+      </label>
+       
+      <label>
+        <input name="choose" value="videos" type="checkbox" class="check" class="check">Videos
+     </label>
+
+     <label>
+      <input name="choose" value="city-meetups" type="checkbox" class="check">City-meetups 
+     </label>
+
+     <label>
+      <input name="choose" value="wiki" type="checkbox" class="check">Wiki
+     </label>
+
+     <label>
+      <input name="choose" value="forum" type="checkbox" class="check"> Forum
+     </label>
+
+     <label>
+      <input name="choose" value="additional-courses" type="checkbox" class="check">Additional Courses
+     </label>
+    </div>
+     <div class="form">
+      <p>Any comments or suggestions?</p>
+      <textarea id="area" class="input-area" name="area" placeholder="Enter your comments here..."></textarea> 
+     
+      <div class="form">
+      <button type="submit">Submit</button>
+     </div>
+  </form>
+  </div>
+  </body>
+  </html>
